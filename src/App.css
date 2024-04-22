@@ -1,0 +1,152 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* --- */
+
+.form {
+  display: flex;
+  align-items: flex-end;
+  margin: 60px 60px 0 60px;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form-input {
+  margin-top: 3px;
+  box-sizing: border-box;
+  border: 2px solid #93c5fd;
+  padding: 8px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.form-button {
+  padding: 0 16px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* --- */
+
+.clocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.clock-city {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.clock-circle {
+  width: 110px;
+  height: 110px;
+  margin: 5px auto;
+  position: relative;
+  border: 3px solid gray;
+  border-radius: 50%;
+}
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+}
+
+.clock-face:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  background: red;
+  border-radius: 6px;
+  content: "";
+  display: block;
+}
+
+.clock-hour {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 -3px -25%;
+  padding: 3px 0 3px 25%;
+  background: #505050;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  border-radius: 3px 0 0 3px;
+}
+
+.clock-minute {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40% -2px 0;
+  padding: 40% 2px 0;
+  background: gray;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  border-radius: 2px 2px 0 0;
+}
+
+.clock-second {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40% -1px 0 0;
+  padding: 40% 1px 0;
+  background: gold;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.clock-button {
+  margin-top: 8px;
+  padding: 0 16px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ef4444;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
